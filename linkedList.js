@@ -122,3 +122,4 @@ ll.removeDup()
 ll.print()
 console.log(ll.findMiddle())
 console.log(ll.hasCycle())
+
