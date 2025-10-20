@@ -191,7 +191,7 @@
 //   .map(n => n * n)          // [9, 25]
 //   .reduce((acc, n) => acc + n, 0); // 34
 
-// console.log(sumSquares); // 34
+// console.log(sumSquares); // 34   
 
 // 6.Implement BFS and DFS using adjacency list (practice traversal order)
 class Graph{
@@ -276,7 +276,7 @@ class Graph{
 
 // 7.Binary search & “insert position” function (given sorted array: return index or insert position)
 function binarySearch(arr, tar , left = 0 , right = arr.length - 1){
-    if(left > right) return null
+    if(left > right) return -1
     let mid = Math.floor((left + right) / 2) + 1
 
     if(arr[mid] === tar) {

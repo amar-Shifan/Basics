@@ -130,6 +130,7 @@ function isPalindrome(str){
     }
     return isPalindrome(str.slice(1, -1))
 }
+
 console.log(isPalindrome('amar'))
 console.log(isPalindrome('malayalam'))
 

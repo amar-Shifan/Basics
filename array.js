@@ -18,7 +18,7 @@ function secondLargest(arr) {
       second = num;
     }
   }
-  return second;
+  return second;   
 }
 
 // ✅ 3. Check palindrome

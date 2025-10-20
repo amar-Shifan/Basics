@@ -80,7 +80,7 @@ const Child = ({message , handleChild , handleClick}) => {
       <h2>Child Class</h2>
       <p>{state.count}</p>
       <button onClick={() => setRunning(true)}>start</button>
-      <button onClick={() => setRunning(false)}>stop</button>
+      <button onClick={() => setRunning(false)}>stop</button>         
       <p>{str}</p>
       <input type="text" onChange={(e) => setStr(e.target.value)} />
       <p>debounde is {debouncedT}</p>

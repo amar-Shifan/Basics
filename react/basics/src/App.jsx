@@ -44,7 +44,6 @@ const App = () => {
   // Counter using the redux 
   const count = useSelector(state => state.counter.value);
 
-
   // useReducer
   // function reducer(state , action){
   //   switch(action.type){
