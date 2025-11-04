@@ -5,13 +5,33 @@ function factorial(num){
 }
 
 
-function fibonacci(num){
-    if(num == 0 ) return 0
-    if(num == 1 ) return 1
-    return fibonacci(num - 1) + fibonacci(num - 2)
+function printFibonacci(n) {
+  function fib(num) {
+    if (num < 2) return num;
+    return fib(num - 1) + fib(num - 2);
+  }
+
+  for (let i = 0; i < n; i++) {
+    console.log(fib(i));
+  }
 }
 
-console.log(fibonacci(5))
+console.log('fibonacci series')
+printFibonacci(7)
+console.log('fibonacci series')
+
+// sum of fibonacci
+function fibonacci(n){
+    if(n<2) return n
+    return fibonacci(n-1) + fibonacci(n-2)
+}
+function findSum(n){
+    if(n===0) return 0
+    return fibonacci(n) + findSum(n-1);
+}
+
+console.log('sum ->'+findSum(6));
+
 
 function sum(n) {
     if(n === 0 ) return 0
